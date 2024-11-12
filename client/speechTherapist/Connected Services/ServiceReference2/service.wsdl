@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetAllMetupal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMetupal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAllMetupal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMetupalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateMetupal_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMetupal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateMetupal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMetupalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteMetupal_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMetupal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteMetupal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMetupalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetMetupalByStatusAndKupa_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetupalByStatusAndKupa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetMetupalByStatusAndKupa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMetupalByStatusAndKupaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTreatmentByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTreatmentByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTreatmentByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTreatmentByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddMetupal_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMetupal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddMetupal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMetupalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTreatment_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTreatment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddTreatment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTreatmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTreatment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTreatment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateTreatment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTreatmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTreatment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTreatment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTreatment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTreatmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTreatment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTreatment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTreatment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTreatmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetProblems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProblems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetProblems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProblemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetProblemForMetupalByNameMetupal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProblemForMetupalByNameMetupal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetProblemForMetupalByNameMetupal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProblemForMetupalByNameMetupalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetAllMetupal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAllMetupal" message="tns:IService1_GetAllMetupal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAllMetupalResponse" message="tns:IService1_GetAllMetupal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMetupal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateMetupal" message="tns:IService1_UpdateMetupal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateMetupalResponse" message="tns:IService1_UpdateMetupal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMetupal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteMetupal" message="tns:IService1_DeleteMetupal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteMetupalResponse" message="tns:IService1_DeleteMetupal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMetupalByStatusAndKupa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetMetupalByStatusAndKupa" message="tns:IService1_GetMetupalByStatusAndKupa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetMetupalByStatusAndKupaResponse" message="tns:IService1_GetMetupalByStatusAndKupa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatmentByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTreatmentByName" message="tns:IService1_GetTreatmentByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTreatmentByNameResponse" message="tns:IService1_GetTreatmentByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMetupal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddMetupal" message="tns:IService1_AddMetupal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddMetupalResponse" message="tns:IService1_AddMetupal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTreatment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddTreatment" message="tns:IService1_AddTreatment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddTreatmentResponse" message="tns:IService1_AddTreatment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTreatment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateTreatment" message="tns:IService1_UpdateTreatment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateTreatmentResponse" message="tns:IService1_UpdateTreatment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTreatment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteTreatment" message="tns:IService1_DeleteTreatment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteTreatmentResponse" message="tns:IService1_DeleteTreatment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTreatment" message="tns:IService1_GetTreatment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTreatmentResponse" message="tns:IService1_GetTreatment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProblems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetProblems" message="tns:IService1_GetProblems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetProblemsResponse" message="tns:IService1_GetProblems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProblemForMetupalByNameMetupal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetProblemForMetupalByNameMetupal" message="tns:IService1_GetProblemForMetupalByNameMetupal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetProblemForMetupalByNameMetupalResponse" message="tns:IService1_GetProblemForMetupalByNameMetupal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllMetupal">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAllMetupal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMetupal">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateMetupal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMetupal">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteMetupal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMetupalByStatusAndKupa">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetMetupalByStatusAndKupa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatmentByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTreatmentByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMetupal">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddMetupal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTreatment">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddTreatment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTreatment">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateTreatment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTreatment">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteTreatment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatment">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTreatment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProblems">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetProblems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProblemForMetupalByNameMetupal">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetProblemForMetupalByNameMetupal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/sharat_speech_therapist/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

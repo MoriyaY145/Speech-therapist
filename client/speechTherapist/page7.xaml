@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="speechTherapist.page7"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו.jpg" Opacity="0.5"></ImageBrush>
+        </Grid.Background>
+        <TextBlock x:Name="tblok1" Text="התורים השבוע:" FontSize="75" Margin="35" HorizontalAlignment="Center" Foreground="DarkOliveGreen" FontWeight="SemiBold"></TextBlock>
+        <Button x:Name="btn1" Content="תור חדש" Width="200" Height="100" FontSize="40" FontWeight="SemiBold" Background="#8C556B64" Foreground="SaddleBrown" VerticalAlignment="Bottom" Margin="100"></Button>
+        <CommandBar Background="White" VerticalAlignment="Top" Margin="10" Height="65" Grid.ColumnSpan="2">
+            <AppBarButton Icon="home" Label="חזור לדף הבית" Click="AppBarButton_Click"></AppBarButton>
+            <AppBarButton Icon="Back" Label="חזור דף אחורה" Click="AppBarButton_Click_1"></AppBarButton>
+        </CommandBar>
+    </Grid>
+</Page>

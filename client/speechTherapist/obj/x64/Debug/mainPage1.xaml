@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="speechTherapist.mainPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו.jpg" ></ImageBrush>
+        </Grid.Background>
+        <StackPanel x:ConnectionId='2' x:Name="spanel1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100" Width="750">
+            <TextBox x:ConnectionId='5' x:Name="tbox1" Header="הקש שם משתמש" FontSize="45" Height="125" FlowDirection="RightToLeft"/>
+            <PasswordBox x:ConnectionId='6' Password="" x:Name="tbox2" Header="הקש סיסמה" FontSize="45" Height="125" FlowDirection="RightToLeft"/>
+        </StackPanel>
+        <Button x:ConnectionId='3' x:Name="btn1" Content="כניסה" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="100" FontSize="40" Foreground="SaddleBrown" Background="#9A556B64" FontWeight="SemiBold" FlowDirection="RightToLeft" Margin="50"                   ></Button>
+        <StackPanel x:ConnectionId='4' x:Name="sPanel2" Orientation="Horizontal" VerticalAlignment="Top" Margin="30">
+            
+        </StackPanel>
+    </Grid>
+</Page>
+

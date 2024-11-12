@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="speechTherapist.page_8"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו מושלםםםם.jpg" 
+ Opacity="0.4"></ImageBrush>
+        </Grid.Background>
+        <TextBlock x:ConnectionId='2' x:Name="btn1" Text=" לשינוי שם משתמש ו/או סיסמה" Width="840" FontSize="62" VerticalAlignment="Top" FlowDirection="RightToLeft" HorizontalAlignment="Center" Margin="80" Foreground="DarkOliveGreen" FontWeight="SemiBold"></TextBlock>
+        <StackPanel x:ConnectionId='3' x:Name="sPanel1" Margin="200">
+            <TextBox x:ConnectionId='7' x:Name="tBox1" Header="הקשי שם משתמש קיים" Width="700" FontSize="40" VerticalAlignment="Top" FlowDirection="RightToLeft" HorizontalAlignment="Center" ></TextBox>
+            <TextBox x:ConnectionId='8' x:Name="tBox2" Header="הקשי שם משתמש חדש" Width="700" FontSize="40" VerticalAlignment="Top" FlowDirection="RightToLeft" HorizontalAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='9' x:Name="tBox3" Header="הקשי סיסמה קיימת" Width="700" FontSize="40" FlowDirection="RightToLeft" HorizontalAlignment="Center"></TextBox>
+            <TextBox x:ConnectionId='10' x:Name="tBox4" Header="הקשי סיסמה חדשה" Width="700" FontSize="40" FlowDirection="RightToLeft" HorizontalAlignment="Center"></TextBox>
+            </StackPanel>
+        <Button x:ConnectionId='4' x:Name="btn3" Content="אישור" VerticalAlignment="Bottom" FlowDirection="RightToLeft" HorizontalAlignment="Center" Margin="100" Width="200" Height="100" FontSize="40" Foreground="SaddleBrown" Background="#8C556B64" FontWeight="SemiBold"                   ></Button>
+        <CommandBar Background="White" VerticalAlignment="Top" Margin="10" Height="65">
+            <AppBarButton x:ConnectionId='5' Icon="home" Label="חזור לדף הבית"                           ></AppBarButton>
+            <AppBarButton x:ConnectionId='6' Icon="Back" Label="חזור דף אחורה"                             ></AppBarButton>
+        </CommandBar>
+
+    </Grid>
+</Page>
+

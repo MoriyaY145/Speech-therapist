@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfdocuments">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="documents" nillable="true" type="tns:documents" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfdocuments" nillable="true" type="tns:ArrayOfdocuments" />
+  <xs:complexType name="documents">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code_document" type="xs:int" />
+          <xs:element minOccurs="0" name="location_document" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="metupal" nillable="true" type="tns:metupal" />
+          <xs:element minOccurs="0" name="name_document" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="documents" nillable="true" type="tns:documents" />
+  <xs:complexType name="baseEntity">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="baseEntity" nillable="true" type="tns:baseEntity" />
+  <xs:complexType name="metupal">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="communication_date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="date_birth" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="family_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="id_metupal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="kupat_cholim" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="notes" type="xs:long" />
+          <xs:element minOccurs="0" name="phone_number" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="private_name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="reason_turning" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="metupal" nillable="true" type="tns:metupal" />
+  <xs:complexType name="ArrayOfmetupal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="metupal" nillable="true" type="tns:metupal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfmetupal" nillable="true" type="tns:ArrayOfmetupal" />
+  <xs:complexType name="ArrayOfproblem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="problem" nillable="true" type="tns:problem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfproblem" nillable="true" type="tns:ArrayOfproblem" />
+  <xs:complexType name="problem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code_problem" type="xs:int" />
+          <xs:element minOccurs="0" name="name_problem" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="problem" nillable="true" type="tns:problem" />
+  <xs:complexType name="ArrayOfproblemForMetupal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="problemForMetupal" nillable="true" type="tns:problemForMetupal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfproblemForMetupal" nillable="true" type="tns:ArrayOfproblemForMetupal" />
+  <xs:complexType name="problemForMetupal">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="metupal" nillable="true" type="tns:metupal" />
+          <xs:element minOccurs="0" name="notes" type="xs:long" />
+          <xs:element minOccurs="0" name="problem" nillable="true" type="tns:problem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="problemForMetupal" nillable="true" type="tns:problemForMetupal" />
+  <xs:complexType name="ArrayOfsingle_treatment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="single_treatment" nillable="true" type="tns:single_treatment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfsingle_treatment" nillable="true" type="tns:ArrayOfsingle_treatment" />
+  <xs:complexType name="single_treatment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code_single_treatment" type="xs:int" />
+          <xs:element minOccurs="0" name="date_single_treatment" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="hour" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="how_paid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="is_paid" type="xs:boolean" />
+          <xs:element minOccurs="0" name="metupal" nillable="true" type="tns:metupal" />
+          <xs:element minOccurs="0" name="num_minutes" type="xs:int" />
+          <xs:element minOccurs="0" name="status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sum_of_payment" type="xs:int" />
+          <xs:element minOccurs="0" name="the_treatment" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="single_treatment" nillable="true" type="tns:single_treatment" />
+  <xs:complexType name="ArrayOfsummingOfSeries">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="summingOfSeries" nillable="true" type="tns:summingOfSeries" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfsummingOfSeries" nillable="true" type="tns:ArrayOfsummingOfSeries" />
+  <xs:complexType name="summingOfSeries">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code_series" type="xs:int" />
+          <xs:element minOccurs="0" name="date_test" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="discrabtion_first_state" type="xs:long" />
+          <xs:element minOccurs="0" name="is_form" type="xs:boolean" />
+          <xs:element minOccurs="0" name="is_testing" type="xs:boolean" />
+          <xs:element minOccurs="0" name="metupal" nillable="true" type="tns:metupal" />
+          <xs:element minOccurs="0" name="num_minutes" type="xs:int" />
+          <xs:element minOccurs="0" name="number_meating" type="xs:int" />
+          <xs:element minOccurs="0" name="number_meating_certified" type="xs:int" />
+          <xs:element minOccurs="0" name="priceForMeating" type="xs:int" />
+          <xs:element minOccurs="0" name="the_goals" type="xs:long" />
+          <xs:element minOccurs="0" name="tretment" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="summingOfSeries" nillable="true" type="tns:summingOfSeries" />
+  <xs:complexType name="ArrayOftreatment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="treatment" nillable="true" type="tns:treatment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftreatment" nillable="true" type="tns:ArrayOftreatment" />
+  <xs:complexType name="treatment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:baseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code_meating" type="xs:int" />
+          <xs:element minOccurs="0" name="date_treatment" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="hour_treatment" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="how_paid" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="is_paid" type="xs:boolean" />
+          <xs:element minOccurs="0" name="metupal" nillable="true" type="tns:metupal" />
+          <xs:element minOccurs="0" name="num_treatment" type="xs:int" />
+          <xs:element minOccurs="0" name="series" nillable="true" type="tns:summingOfSeries" />
+          <xs:element minOccurs="0" name="status_treatment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="the_treatment" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="treatment" nillable="true" type="tns:treatment" />
+</xs:schema>

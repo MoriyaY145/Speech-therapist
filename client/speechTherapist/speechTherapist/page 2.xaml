@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="speechTherapist.page_2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגו מושלם.jpg" Opacity="0.7"></ImageBrush>
+        </Grid.Background>
+        <Button x:Name="b1" Content="יומן תורים" Width="450" FontSize="60" Foreground="Purple" Background="#2AFF0000" HorizontalAlignment="Right" Margin="100,250,900,250" VerticalAlignment="Bottom"></Button>
+        <ComboBox x:Name="b2" Header="רשימת מטופלים" Width="450" FontSize="60" Foreground="Purple" Background="#2AFF0000" HorizontalAlignment="Right" Margin="100,250,900,70" VerticalAlignment="Bottom">
+            <ComboBoxItem x:Name="cbi1" Content="קיים"></ComboBoxItem>
+            <ComboBoxItem x:Name="cbi2" Content="חדש"></ComboBoxItem>
+        </ComboBox>
+        <SymbolIcon Symbol="Back" x:Name="sym1" Margin="1200,30,0,0" Width="100" Height="75" VerticalAlignment="Top" Tapped="sym1_Tapped"></SymbolIcon>
+
+    </Grid>
+</Page>

@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="speechTherapist.page_change"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו מושלםםםם.jpg" 
+ Opacity="0.4"></ImageBrush>
+        </Grid.Background>
+        <CommandBar Background="White" VerticalAlignment="Top" Margin="10" Height="65" Grid.ColumnSpan="2">
+            <AppBarButton x:ConnectionId='13' Icon="home" Label="חזור לדף הבית"                           ></AppBarButton>
+            <AppBarButton x:ConnectionId='14' Icon="Back" Label="חזור דף אחורה"                             ></AppBarButton>
+        </CommandBar>
+        <TextBlock x:ConnectionId='2' x:Name="tblok1" Text="אפשרויות למטופל הנבחר" FontSize="70" Margin="35" HorizontalAlignment="Center" Foreground="DarkOliveGreen" FontWeight="SemiBold" Grid.ColumnSpan="2"></TextBlock>
+        <Button x:ConnectionId='3' x:Name="btn1" Content="הצג פרטים" Grid.Column="1" Grid.Row="0" Width="358" Height="220" FontSize="60" Foreground="SaddleBrown" Background="#8C556B64" FontWeight="SemiBold" Margin="200,220,30,50"                   ></Button>
+        <Button x:ConnectionId='4' x:Name="btn2" Content="עדכון פרטים" Grid.Column="0" Grid.Row="0" Width="358" Height="220" FontSize="60" Foreground="SaddleBrown" Background="#8C556B64" FontWeight="SemiBold" Margin="200,220,30,50"                   ></Button>
+        <Button x:ConnectionId='5' x:Name="btn3" Content="מחיקת המטופל" Grid.Column="1" Grid.Row="1" Width="360" Height="220" FontSize="50" Foreground="SaddleBrown" Background="#8C556B64" FontWeight="SemiBold" HorizontalAlignment="Center"                   ></Button>
+        <Button x:ConnectionId='6' x:Name="btn4" Content="תקיית מטופל" Grid.Column="0" Grid.Row="1" Width="358" Height="220" FontSize="58" FontWeight="SemiBold" Foreground="SaddleBrown" Background="#8C556B64" HorizontalAlignment="Center"></Button>
+        <Button x:ConnectionId='7' x:Name="btn5" Content="יומן תורים" Grid.Column="0" Grid.Row="0" Width="200" Height="100" FontSize="40" FontWeight="SemiBold" Foreground="SaddleBrown" Background="#8C556B64" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,300,100"></Button>
+        <Popup x:ConnectionId='8' x:Name="p1" Grid.Column="1" Grid.Row="1">
+            <Border BorderBrush="#FF556B64" BorderThickness="5">
+                <StackPanel>
+                    <Button x:ConnectionId='9'                      HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Background="Red">
+                        <SymbolIcon Symbol="Clear"></SymbolIcon>
+                    </Button>
+                    <TextBlock x:ConnectionId='10' x:Name="tBlock2" Text="האם הנך בטוחה שברצונך למחוק מטופל זה?" Margin="15" FontSize="22"></TextBlock>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+                        <Button x:ConnectionId='11' x:Name="btn6" Content="לא" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown"                   ></Button>
+                        <Button x:ConnectionId='12' x:Name="btn7" Content="כן" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>           
+        </Popup>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+    </Grid>
+</Page>
+

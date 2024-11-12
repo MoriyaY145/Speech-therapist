@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="speechTherapist.page_4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    FlowDirection="LeftToRight">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגו מושלם.jpg" Opacity="0.5"></ImageBrush>
+        </Grid.Background>
+        <TextBlock x:Name="tb1" Text="רשימת המטופלים כבחירתך" FontSize="60" HorizontalAlignment="Center" Foreground="Purple" Margin="25"></TextBlock>
+        <TextBox x:Name="tbox1" Header="חיפוש -נא הקישי שם מטופל" FontSize="32" FlowDirection="RightToLeft" Margin="480,120,100,780"></TextBox>
+        <SymbolIcon Symbol="Back" x:Name="sym2" Grid.Column="0" Margin="1350,30,580,0" Width="100" Height="75" VerticalAlignment="Top" Tapped="sym2_Tapped"></SymbolIcon>
+
+    </Grid>
+</Page>

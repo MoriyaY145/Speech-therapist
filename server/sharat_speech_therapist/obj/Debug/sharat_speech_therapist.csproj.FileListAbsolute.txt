@@ -1,0 +1,33 @@
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.CoreCompileInputs.cache
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\sharat_speech_therapist.dll
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\sharat_speech_therapist.pdb
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.dll
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.pdb
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csprojAssemblyReference.cache
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\model.dll
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\viewModel.dll
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\model.pdb
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\viewModel.pdb
+H:\כתה יב תשפב תכנות\מוריה יגודייב\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.CopyComplete
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\sharat_speech_therapist.dll
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\sharat_speech_therapist.pdb
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\model.dll
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\viewModel.dll
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\model.pdb
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\viewModel.pdb
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csprojAssemblyReference.cache
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.CoreCompileInputs.cache
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.CopyComplete
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.dll
+C:\Users\tichnut\Desktop\פרויקט סוף שנה-קלינאית תקשורת\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.pdb
+E:\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.AssemblyReference.cache
+E:\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.CoreCompileInputs.cache
+E:\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.dll
+E:\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.pdb
+E:\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\sharat_speech_therapist.dll
+E:\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\sharat_speech_therapist.pdb
+E:\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\model.dll
+E:\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\viewModel.dll
+E:\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\model.pdb
+E:\sharat_speech_therapist\sharat_speech_therapist\bin\Debug\viewModel.pdb
+E:\sharat_speech_therapist\sharat_speech_therapist\obj\Debug\sharat_speech_therapist.csproj.CopyComplete

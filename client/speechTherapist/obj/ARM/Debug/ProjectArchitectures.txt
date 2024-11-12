@@ -1,0 +1,1 @@
+C:\Users\tichnut\Desktop\speechTherapist\speechTherapist\speechTherapist.csproj;arm

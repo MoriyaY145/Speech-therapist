@@ -1,0 +1,48 @@
+E:\p2\speechTherapist\obj\x64\Debug\speechTherapist.csproj.AssemblyReference.cache
+E:\p2\speechTherapist\obj\x64\Debug\App.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\App.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\mainPage1.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\mainPage1.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page 2.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page 2.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page 3.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page 3.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page1.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page1.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page5.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page5.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page6.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page6.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page_4.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page_4.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page_change.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page_change.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page 8.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page 8.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\page7.g.i.cs
+E:\p2\speechTherapist\obj\x64\Debug\page7.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\XamlTypeInfo.g.cs
+E:\p2\speechTherapist\obj\x64\Debug\App.xaml
+E:\p2\speechTherapist\obj\x64\Debug\mainPage1.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page 2.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page 3.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page 8.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page1.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page5.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page6.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page7.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page_4.xaml
+E:\p2\speechTherapist\obj\x64\Debug\page_change.xaml
+E:\p2\speechTherapist\obj\x64\Debug\App.xbf
+E:\p2\speechTherapist\obj\x64\Debug\mainPage1.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page 2.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page 3.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page 8.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page1.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page5.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page6.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page7.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page_4.xbf
+E:\p2\speechTherapist\obj\x64\Debug\page_change.xbf
+E:\p2\speechTherapist\obj\x64\Debug\XamlSaveStateFile.xml
+E:\p2\speechTherapist\obj\x64\Debug\speechTherapist.csproj.CoreCompileInputs.cache

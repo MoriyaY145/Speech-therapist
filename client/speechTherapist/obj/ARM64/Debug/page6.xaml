@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="speechTherapist.page6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו.jpg" Opacity="0.5"></ImageBrush>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:ConnectionId='2' Grid.Column="0" Grid.ColumnSpan="2" x:Name="tbl1" Text="הקישי את פרטי המטופל" FontSize="60" Margin="50" Foreground="DarkOliveGreen" FontWeight="SemiBold" HorizontalAlignment="Center"></TextBlock>
+
+        <StackPanel Margin="120" Grid.Column="1" FlowDirection="RightToLeft">
+            <TextBox x:ConnectionId='13' x:Name="tb1" Header="מספר תעודת זהות" FontSize="22" Width="496"/>
+            <TextBox x:ConnectionId='14' x:Name="tb2" Header="שם פרטי" FontSize="22" Width="496"/>
+            <TextBox x:ConnectionId='15' x:Name="tb3" Header="שם משפחה" FontSize="22" Width="496"/>
+            <TextBox x:ConnectionId='16' x:Name="tb4" Header="תאריך לידה" FontSize="22" Width="496"/>
+            <TextBox x:ConnectionId='17' x:Name="tb5" Header="מספר טלפון/פלאפון" FontSize="22" Width="496"/>
+            <ComboBox x:ConnectionId='18' x:Name="tb7" Header="שם קופת חולים" FontSize="22" Width="496">
+                <ComboBoxItem x:ConnectionId='26' x:Name="cbi1" Content="כללית"></ComboBoxItem>
+                <ComboBoxItem x:ConnectionId='27' x:Name="cbi2" Content="מאוחדת"></ComboBoxItem>
+                <ComboBoxItem x:ConnectionId='28' x:Name="cbi3" Content="מכבי" ></ComboBoxItem>
+                <ComboBoxItem x:ConnectionId='29' x:Name="cbi4" Content="לאומית" ></ComboBoxItem>
+            </ComboBox>
+            <TextBox x:ConnectionId='19' x:Name="tb8" Header="תאריך התקשרות" FontSize="22" Width="496"/>
+            <ComboBox x:ConnectionId='20' x:Name="tb9" Header="סטטוס" FontSize="22" Width="496">
+                <ComboBoxItem x:ConnectionId='22' x:Name="cbi5" Content="בהמתנה"></ComboBoxItem>
+                <ComboBoxItem x:ConnectionId='23' x:Name="cbi6" Content="פעיל"></ComboBoxItem>
+                <ComboBoxItem x:ConnectionId='24' x:Name="cbi7" Content="לא פעיל" ></ComboBoxItem>
+                <ComboBoxItem x:ConnectionId='25' x:Name="cbi8" Content="אחר" ></ComboBoxItem>
+            </ComboBox>
+            <TextBox x:ConnectionId='21' x:Name="tb10" Header="הערות" FontSize="22" FontFamily="Edwardian Script ITC" Width="496"  />
+        </StackPanel>
+        <StackPanel x:ConnectionId='3' x:Name="sPanel" Grid.Column="0" Margin="220" FlowDirection="RightToLeft">
+            <Button x:ConnectionId='6' x:Name="tb6"   Content="סיבת הפניה" FontSize="30"                   Height="80" Width="489" Background="#8C556B64" Foreground="SaddleBrown" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+            <CheckBox x:ConnectionId='7' x:Name="a1" Content="דחיקת לשון" Visibility="Collapsed"/>
+            <CheckBox x:ConnectionId='8' x:Name="b2" Content="צרידות" Visibility="Collapsed"/>
+            <CheckBox x:ConnectionId='9' x:Name="c3" Content="גימגום" Visibility="Collapsed"/>
+            <CheckBox x:ConnectionId='10' x:Name="d4" Content="היגוי" Visibility="Collapsed"/>
+            <CheckBox x:ConnectionId='11' x:Name="e5" Content="התפתחות מאוחרת" Visibility="Collapsed"/>
+            <CheckBox x:ConnectionId='12' x:Name="f6" Content="אחר" Visibility="Collapsed"                 />
+        </StackPanel>
+        <Button x:ConnectionId='4' x:Name="b1" Content="שמור" Grid.Column="0" Width="150" Height="100" VerticalAlignment="Bottom" Margin="150,0,0,100" FontWeight="SemiBold" Background="#8C556B64" Foreground="SaddleBrown" FontSize="32"></Button>
+        <SymbolIcon x:ConnectionId='5' Symbol="Back" x:Name="sym1" Grid.Column="1" Margin="550,30,50,0" Width="100" Height="75" VerticalAlignment="Top"></SymbolIcon>
+
+
+
+    </Grid>
+</Page>
+

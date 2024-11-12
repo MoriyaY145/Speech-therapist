@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="speechTherapist.page_2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו מושלםםםם.jpg"  Opacity="0.5"></ImageBrush>
+        </Grid.Background>
+        <StackPanel></StackPanel>
+        <Button x:ConnectionId='2' x:Name="b1" Content="יומן תורים" Width="460" FontSize="60" Foreground="SaddleBrown" Background="#9A556B64" FontWeight="SemiBold" HorizontalAlignment="Left" Margin="950,200,0,200" VerticalAlignment="Bottom"                 ></Button>
+        <Button x:ConnectionId='3' x:Name="b2" Content="רשימת מטופלים" Width="460" FontSize="60" Foreground="SaddleBrown" Background="#9A556B64" FontWeight="SemiBold" HorizontalAlignment="Left" Margin="950,200,10,70" VerticalAlignment="Bottom"                 ></Button>
+        <Button x:ConnectionId='4' x:Name="b3" Content="שינוי שם משתמש וסיסמה" Width="750" FontSize="60" Foreground="SaddleBrown" Background="#9A556B64" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="80"                 ></Button>
+        <Popup x:ConnectionId='5' x:Name="p1" HorizontalAlignment="Left" Margin="950,250,0,200" VerticalAlignment="Bottom" FlowDirection="RightToLeft" Opacity="80">
+            <Border BorderBrush="#FF556B64" BorderThickness="5">
+                <StackPanel>
+                    <Button x:ConnectionId='6'                      HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Background="Red">
+                        <SymbolIcon Symbol="Clear"></SymbolIcon>
+                    </Button>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+                        <Button x:ConnectionId='7' x:Name="btn6" Content="קיים" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown"                   ></Button>
+                        <Button x:ConnectionId='8' x:Name="btn7" Content="חדש" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown"                   ></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Popup>
+        
+
+    </Grid>
+</Page>
+

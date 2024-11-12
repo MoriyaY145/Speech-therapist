@@ -1,0 +1,66 @@
+﻿<Page
+    Loading="Page_Loading"
+    x:Class="speechTherapist.page_4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:speechTherapist"
+    xmlns:service="using:speechTherapist.ServiceReference2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    FlowDirection="LeftToRight">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/לוגוווו מושלםםםם.jpg" 
+ Opacity="0.4"></ImageBrush>
+        </Grid.Background>
+        <TextBlock x:Name="tb1" Text="רשימת המטופלים כבחירתך" FontSize="65" HorizontalAlignment="Center" Foreground="DarkOliveGreen" FontWeight="SemiBold" Margin="25"></TextBlock>
+        <TextBox x:Name="tbox1" Header="חיפוש 🔎-נא הקישי שם מטופל" FontSize="35" FlowDirection="RightToLeft" Margin="480,130,100,760" TextChanged="tbox1_TextChanged"></TextBox>
+        <ListView x:Name="lView1" Margin="200,300,200,120" FlowDirection="RightToLeft" SelectionChanged="lView1_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="service:metupal">
+                    <StackPanel x:Name="sPanel1" Orientation="Horizontal" Margin="20" Background="#8C556B64" Width="1500" Tapped="sPanel1_Tapped">
+                        <SymbolIcon Symbol="Contact" Margin="5"></SymbolIcon>
+                        <TextBlock x:Name="tblock1" Text="{Binding name_metupal}" FontSize="30" Margin="5"></TextBlock>
+                        <TextBlock Text="{Binding id_metupal}" FontSize="30" Margin="8"></TextBlock>
+                    </StackPanel> 
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <CommandBar Background="White" VerticalAlignment="Top" Margin="10" Height="65">
+            <AppBarButton Icon="home" Label="חזור לדף הבית" Click="AppBarButton_Click"></AppBarButton>
+            <AppBarButton Icon="Back" Label="חזור דף אחורה" Click="AppBarButton_Click_1"></AppBarButton>
+        </CommandBar>
+        <Popup x:Name="p1" Grid.Column="1" Grid.Row="1" Margin="150,400,800,250">
+            <Border BorderBrush="#FF556B64" BorderThickness="5">
+                <StackPanel>
+                    <Button x:Name="btn1" Click="btn1_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Background="Red">
+                        <SymbolIcon Symbol="Clear"></SymbolIcon>
+                    </Button>
+                    <TextBlock x:Name="tBlock2" Text="האם הנך בטוחה שברצונך למחוק מטופל זה?" Margin="15" FontSize="22"></TextBlock>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+                        <Button x:Name="btn6" Content="לא" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown" Click="btn6_Click"></Button>
+                        <Button x:Name="btn7" Content="כן" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Popup>
+        <Popup x:Name="p2" Grid.Column="1" Grid.Row="1" Margin="150,400,800,250">
+            <Border BorderBrush="#FF556B64" BorderThickness="5">
+                <StackPanel>
+                    <Button x:Name="btn9" Click="btn9_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Background="Red">
+                        <SymbolIcon Symbol="Clear"></SymbolIcon>
+                    </Button>
+                    <TextBlock x:Name="tBlock3" Text="בחרי את האפשרות הרצויה!" Margin="15" FontSize="22"></TextBlock>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+                        <Button x:Name="btn2" Content="מחיקת המטופל" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown" Click="btn2_Click"></Button>
+                        <Button x:Name="btn3" Content="פרטי המטופל" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown" Click="btn3_Click"></Button>
+                        <Button x:Name="btn4" Content="קביעת טיפול" Margin="28" FontSize="18" BorderBrush="#FF556B64" Foreground="SaddleBrown"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Popup>
+    </Grid>
+</Page>
